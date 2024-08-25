@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "URL Copier (Decoded)",
+    "version": "1.4",
+    "description": "디코딩된 원본 URL을 클립보드에 복사하고 피드백을 제공합니다.",
+    "permissions": ["activeTab", "scripting", "clipboardWrite"],
+    "action": {
+      "default_title": "URL 복사 (디코딩)"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ]
+  }
